@@ -542,9 +542,10 @@ const FileViewer = () => {
     };
   }, [editor]);
 
-  // useEffect(() => {
-  //   console.log(`This is the print ${window.Telegram.WebApp.initData}`);
-  // }, []);
+  useEffect(() => {
+    console.log(`This is the print ${window.Telegram.WebApp.initData}`);
+    // }
+  }, []);
 
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center bg-gray-100">
