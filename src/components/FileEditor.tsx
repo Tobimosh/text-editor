@@ -543,7 +543,7 @@ const FileViewer = () => {
   }, [editor]);
 
   useEffect(() => {
-    console.log(`This is the print ${window.Telegram.WebApp.initData}`);
+    console.log(`This is the print ${window?.Telegram?.WebApp?.initData}`);
     // }
   }, []);
 
