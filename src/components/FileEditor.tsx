@@ -440,7 +440,7 @@
 // export default FileViewer;
 
 "use client";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { IDomEditor, IEditorConfig, IToolbarConfig } from "@wangeditor/editor";
 import "@wangeditor/editor/dist/css/style.css"; // Editor styles
@@ -459,7 +459,7 @@ const FileViewer = () => {
   const [editor, setEditor] = useState<IDomEditor | null>(null);
   const [html, setHtml] = useState("<p>Start editing...</p>");
 
-  const editorRef = useRef<HTMLDivElement>(null);
+  // const editorRef = useRef<HTMLDivElement>(null);
 
   const editorConfig: Partial<IEditorConfig> = {
     placeholder: "Type here...",

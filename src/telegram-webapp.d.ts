@@ -59,7 +59,10 @@ interface TelegramWebApp {
   offEvent: (eventType: string, callback: () => void) => void;
   sendData: (data: string) => void;
   setHeaderColor: (color: string) => void;
-  switchInlineQuery: (query?: any, choose_chat_types?: any) => void;
+  switchInlineQuery: (
+    query?: string,
+    choose_chat_types?: Array<"users" | "groups" | "channels">
+  ) => void;
 }
 
 interface Window {
